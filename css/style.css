@@ -77,7 +77,11 @@ nav .nav-right ul li a:hover::after {
   background-color: #E9BB18;
 }
 
-/* Body */
+/* Main */
+
+main{
+  margin-bottom: 2em;
+}
 
 h2{
   padding: .5em 0;
@@ -125,4 +129,26 @@ img{
 
 .infos>*{
   padding-bottom: 1em;
+}
+
+/* Footer */
+footer{
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+footer::before{
+  content: '';
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #212121;
 }
