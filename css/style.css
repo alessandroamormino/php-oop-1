@@ -5,6 +5,12 @@
 }
 /* Reset */
 
+/* Assets */
+
+.yellow {
+  color: #E9BB18;
+}
+
 body {
   background-color: #000;
   color: #fff;
@@ -13,8 +19,65 @@ body {
 
 h1{
   text-align: center;
-  padding-top: 1em;
 }
+
+/* Header */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex */
+  padding: 0 2em;
+}
+
+nav .nav-left{
+  display: flex;
+  align-items: center;
+  /* flex */
+
+  padding: 1em;
+  
+  height: 50px;
+  border-radius: 10px;
+  background-color: #E9BB18;
+  color: #000;
+  font-weight: 700;
+}
+
+nav .nav-right ul{
+  display: flex;
+  gap: 2em;
+  /* flex */
+  list-style-type: none;
+}
+
+nav .nav-right ul li{
+  padding: 40px 0;
+}
+
+nav .nav-right ul li a {
+  position: relative;
+  padding: 40px 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .nav-right ul li a:hover{
+  color: #E9BB18;
+}
+
+nav .nav-right ul li a:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+  background-color: #E9BB18;
+}
+
+/* Body */
 
 h2{
   padding: .5em 0;

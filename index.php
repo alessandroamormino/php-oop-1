@@ -20,6 +20,10 @@ require_once 'db.php';
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
+  <!-- importo la nav dalle partials -->
+  <?php
+    include './Views/partials/header.php';
+  ?>
   <h1>Movies</h1>
 
   <div class="container">
@@ -36,25 +40,26 @@ require_once 'db.php';
         <div class="infos">
           <div class="genres">
             <!-- stampo più generi separati da una virgola -->
-            Genre: 
+            <span class="yellow">Genre: </span>  
             <?php 
-              $count = count($singleMovie->genre) - 1;
-              foreach($singleMovie->genre as $key=>$singleGenre){
-                echo $singleGenre;
-                if($key < $count){
-                  echo ", ";
-                }
-              }
+              // $count = count($singleMovie->genre) - 1;
+              // foreach($singleMovie->genre as $key=>$singleGenre){
+              //   echo $singleGenre;
+              //   if($key < $count){
+              //     echo ", ";
+              //   }
+              // }
+              echo implode(", ", $singleMovie->genre);
             ?>
           </div>
           <div class="duration">
-            Duration: <?= $singleMovie->duration ?>
+            <span class="yellow">Duration: </span> <?= $singleMovie->duration ?>
           </div>
           <div class="ratings">
-            Rating: <?= $singleMovie->getInfo(); ?> 
+            <span class="yellow">Rating: </span> <?= $singleMovie->getInfo(); ?> 
           </div>
           <div class="storyline">
-            Storyline: <?= $singleMovie->storyline ?>
+            <span class="yellow">Storyline: </span> <?= $singleMovie->storyline ?>
           </div>
         </div>
       </div>
