@@ -158,3 +158,7 @@ footer::before{
 
   background-color: #212121;
 }
+
+footer .social>*{
+  padding: 0 .5em;
+}
