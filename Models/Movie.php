@@ -10,7 +10,7 @@ class Movie {
   public $image;
 
   // dichiaro il constructor
-  function __construct(string $title, array $genre, string $duration, int $rating, string $storyline, string $image){
+  function __construct(string $title, array $genre, string $duration, float $rating, string $storyline, string $image){
     // memorizzo i valori nella classe
     $this->title = $title;
     $this->genre = $genre;

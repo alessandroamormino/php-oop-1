@@ -35,7 +35,7 @@ require_once 'db.php';
         ?>
         <div class="card">
           <div class="title">
-            <h2><?= $singleMovie->title ?></h2>
+            <h3><?= $singleMovie->title ?></h3>
           </div>
           <div class="image">
             <img src="<?= $singleMovie->image ?>" alt="<?= $singleMovie->title ?>">
