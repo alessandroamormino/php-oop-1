@@ -9,7 +9,7 @@ class Movie {
   public $storyline;
 
   // dichiaro il constructor
-  function __construct(string $title, string $genre, string $duration, int $rating, string $storyline){
+  function __construct(string $title, array $genre, string $duration, int $rating, string $storyline){
     // memorizzo i valori nella classe
     $this->title = $title;
     $this->genre = $genre;
@@ -21,4 +21,10 @@ class Movie {
   public function getInfo(){
     return "Vote: {$this->rating}";
   }
+
+  // public function getGenres($genre){
+  //   foreach($genre as $singleGenre){
+  //     return $singleGenre;
+  //   }
+  // }
 }
