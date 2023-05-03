@@ -110,6 +110,12 @@ h2{
   padding: 1em;
   border-radius: 10px;
   background-color: #212121;
+
+  transition: transform .4s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
 }
 
 img{
