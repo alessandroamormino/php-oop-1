@@ -5,10 +5,20 @@
 }
 /* Reset */
 
+h1{
+  text-align: center;
+  padding-top: 1em;
+}
+
 .container{
   display: flex;
   flex-flow: row wrap;
   gap: 1em;
+  /* flex */
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding-top: 2em;
 }
 
 .card{
@@ -23,5 +33,5 @@
 }
 
 img{
-  width: 500px;
+  width: 100%;
 }
