@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Reset */
+
+.container{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+}
+
+.card{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: .5em;
+  /* flex */
+
+  width: calc(100% / 2 - 1em / 2 * 1);
+
+  border: 1px solid black;
+}
+
+img{
+  width: 500px;
+}
