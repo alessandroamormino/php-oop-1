@@ -3,7 +3,6 @@
 require_once './Models/Movie.php';
 require_once 'db.php';
 
-
 ?>
 
 <!DOCTYPE html>
@@ -20,6 +19,9 @@ require_once 'db.php';
   <div class="card">
     <div class="title">
       <h4><?= $guardians->title ?></h4>
+    </div>
+    <div class="image">
+      <img src="<?= $guardians->image ?>" alt="<?= $guardians->title ?>">
     </div>
     <div class="genres">
       <!-- stampo più generi separati da una virgola -->
@@ -47,6 +49,9 @@ require_once 'db.php';
   <div class="card">
     <div class="title">
       <h4><?= $johnWick->title ?></h4>
+    </div>
+    <div class="image">
+      <img src="<?= $johnWick->image ?>" alt="<?= $johnWick->title ?>">
     </div>
     <div class="genres">
       <!-- stampo più generi separati da una virgola -->
