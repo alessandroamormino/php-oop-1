@@ -4,10 +4,10 @@
   </div>
   <div class="footer-left">
     <div class="social">
-      <i class="fa-brands fa-linkedin-in yellow"></i>
-      <i class="fa-brands fa-instagram yellow"></i>
-      <i class="fa-brands fa-twitter yellow"></i>
-      <i class="fa-brands fa-facebook-f yellow"></i>
+      <a href="#"><i class="fa-brands fa-linkedin-in yellow"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram yellow"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter yellow"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook-f yellow"></i></a>
     </div>
   </div>
 </footer>
