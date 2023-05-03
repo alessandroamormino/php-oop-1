@@ -22,9 +22,4 @@ class Movie {
     return "Vote: {$this->rating}";
   }
 
-  // public function getGenres($genre){
-  //   foreach($genre as $singleGenre){
-  //     return $singleGenre;
-  //   }
-  // }
 }

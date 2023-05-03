@@ -40,7 +40,7 @@ require_once 'db.php';
       <?= $guardians->getInfo(); ?> 
     </div>
     <div class="storyline">
-      <p><?= $guardians->storyline ?></p>
+      <?= $guardians->storyline ?>
     </div>
   </div>
 
@@ -67,7 +67,7 @@ require_once 'db.php';
       <?= $johnWick->getInfo(); ?> 
     </div>
     <div class="storyline">
-      <p><?= $johnWick->storyline ?></p>
+      <?= $johnWick->storyline ?>
     </div>
   </div>
 
